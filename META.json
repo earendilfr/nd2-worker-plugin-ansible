@@ -1,0 +1,65 @@
+{
+   "abstract" : "Generate ansible hosts file",
+   "author" : [
+      "Ambroise Rosset <earendil@toleressea.fr>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4232",
+   "license" : [
+      "bsd"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "App-NetdiscoX-Worker-Plugin-MakeAnsibleHosts",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.42"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0",
+            "File::ShareDir::Install" : "0.06",
+            "Module::Build" : "0.42"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "App::Netdisco" : "2.063001",
+            "Dancer" : "1.3132",
+            "File::ShareDir" : "1.00"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Distribution" : "0",
+            "Test::More" : "0.88",
+            "Test::Perl::Critic" : "0",
+            "Test::Pod" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "App::NetdiscoX::Worker::Plugin::MakeAnsibleHosts" : {
+         "file" : "lib/App/NetdiscoX/Worker/Plugin/MakeAnsibleHosts.pm"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/earendilfr/nd2-worker-plugin-ansible/issues"
+      },
+      "homepage" : "http://netdisco.org/",
+      "license" : [
+         "http://opensource.org/licenses/BSD-3-Clause"
+      ],
+      "repository" : {
+         "url" : "https://github.com/earendilfr/nd2-worker-plugin-ansible"
+      }
+   },
+   "version" : 0,
+   "x_serialization_backend" : "JSON::PP version 4.07"
+}

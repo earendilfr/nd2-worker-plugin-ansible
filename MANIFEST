@@ -1,0 +1,10 @@
+Build.PL
+Changes
+lib/App/NetdiscoX/Worker/Plugin/MakeAnsibleHosts.pm
+MANIFEST			This list of files
+META.json
+META.yml
+README
+xt/00_local_distribution.t
+xt/00_local_perlcritic.t
+xt/00_local_pod.t
