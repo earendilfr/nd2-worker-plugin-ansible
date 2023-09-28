@@ -131,6 +131,7 @@ register_worker({ phase => 'main' }, sub {
 
   while(my ($host, $vars) = each %$hosts_inv) {
     eval {
+      local $YAML::XS::Boolean = "JSON::PP";
       if (-f "${ansible_root}/host_vars/$host.yml") {
         $hosts_inv->{$host} = merge($hosts_inv->{$host},LoadFile("${ansible_root}/host_vars/$host.yml"));
       }

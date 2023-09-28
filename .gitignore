@@ -1,0 +1,14 @@
+*.swp
+*.swo
+*.pid
+test.pl
+MYMETA.*
+*.tar.gz
+MANIFEST.*
+*.komodo*
+Makefile*
+Build
+_build
+blib
+cover_db
+.idea
